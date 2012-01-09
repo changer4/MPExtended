@@ -34,24 +34,30 @@ namespace MPExtended.ServiceHosts.Hosting
 
         public static Uri[] GetForService(string serviceName)
         {
+            return GetForPostfix(String.Format("MPExtended/{0}/", serviceName));
+        }
+
+        public static Uri[] GetForPostfix(string postfix)
+        {
             List<Uri> ret = new List<Uri>() { };
 
             // HTTP binding: pick the first non-local address to make sure there is also an valid IP in the SOAP messages.
             // We're restricted to just one IP by the WCF hosting, can't do anything about that. Shipping IIS is a bit too much. 
-            IEnumerable<string> nonLocalAddresses = NetworkInformation.GetIPAddresses().Where(x => x != "127.0.0.1" && x != "localhost");
-            string addr;
-            if (nonLocalAddresses.Count() > 0)
+            var addresses = NetworkInformation.GetIPAddressList();
+            var nonLocalAddresses = NetworkInformation.GetIPAddressList().Where(x => !NetworkInformation.IsLocalAddress(x));
+            IPAddress addr;
+            if (addresses.Any(x => !NetworkInformation.IsLocalAddress(x)))
             {
-                addr = nonLocalAddresses.First();
+                addr = addresses.First(x => !NetworkInformation.IsLocalAddress(x));
             }
             else
             {
-                addr = "127.0.0.1";
+                addr = addresses.First();
             }
-            ret.Add(new Uri(String.Format("http://{0}:{1}/MPExtended/{2}/", addr, Configuration.Services.Port, serviceName)));
+            ret.Add(new Uri(String.Format("http://{0}:{1}/{2}", addr, Configuration.Services.Port, postfix)));
 
             // local net.pipe binding
-            ret.Add(new Uri(String.Format("net.pipe://127.0.0.1/MPExtended/{0}", serviceName)));
+            ret.Add(new Uri(String.Format("net.pipe://127.0.0.1/{0}", postfix)));
 
             return ret.ToArray();
         }

@@ -70,6 +70,7 @@
         <File Source="$(var.MPExtended.ServiceHosts.CoreService.TargetDir)\MPExtended.ServiceHosts.Hosting.dll" />
         <File Source="$(var.MPExtended.ServiceHosts.CoreService.TargetDir)\MPExtended.ServiceHosts.Hosting.pdb" />
         <File Source="$(var.MPExtended.ServiceHosts.CoreService.TargetDir)\ZeroconfService.dll" />
+        <File Source="$(var.MPExtended.ServiceHosts.Hosting.ProjectDir)\clientaccesspolicy.xml" />
         
         <!-- let's just install the consolehost too, for debugging -->
         <File Source="$(var.MPExtended.ServiceHosts.ConsoleHost.TargetDir)\MPExtended.ServiceHosts.ConsoleHost.exe" />

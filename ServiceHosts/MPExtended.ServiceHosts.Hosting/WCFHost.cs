@@ -42,6 +42,10 @@ namespace MPExtended.ServiceHosts.Hosting
 
         public void Start(List<Service> availableServices)
         {
+            // add FileService
+            hosts.Add(new ServiceHost(typeof(FileService), BaseAddresses.GetForPostfix("")));
+
+            // all normal services
             foreach (Service srv in availableServices)
             {
                 try
@@ -79,7 +83,7 @@ namespace MPExtended.ServiceHosts.Hosting
                         foreach (var endpoint in host.Description.Endpoints)
                         {
                             // do not enable auth for stream endpoint
-                            if (endpoint.Name == "StreamEndpoint")
+                            if (endpoint.Name == "StreamEndpoint" || endpoint.Name.StartsWith("Unauthenticated"))
                             {
                                 continue;
                             }
