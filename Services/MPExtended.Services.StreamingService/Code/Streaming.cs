@@ -248,7 +248,7 @@ namespace MPExtended.Services.StreamingService.Code
                     }
 
                     Log.Info("Started stream with identifier " + identifier);
-                    return stream.Transcoder.GetStreamURL();
+                    return stream.Transcoder.GetStreamURL(stream.Context);
                 }
             }
             catch (Exception ex)
