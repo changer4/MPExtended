@@ -25,8 +25,23 @@
 	<button name="time" value="@Model.LaterGuideStart.ToString("s")" class="later"></button>
     <br />
     <br />
-
     <div id="TVGuide">
+	  <div class="headerrow">
+            <div class="headerspacer">
+                &nbsp;
+            </div>
+            <div class="programs">
+                @{  foreach (var marker in Model.TimeMarkers)
+                    {
+                        <div class="programcontainer">
+                            <div class="headertime">
+                                @Model.GuideStart.ToString("dddd MM/dd/yyyy")
+                            </div>
+                        </div>        
+                    }   
+                }
+            </div>
+        </div>
         <div class="headerrow">
             <div class="headerspacer">
                 &nbsp;
