@@ -29,8 +29,9 @@ button.earlier {
 div.earlier_wrap {
 	position: fixed;
 	margin-left: -55px;
+	margin-top: 20px;
 	width: 40px;
-	height: 70px;
+	height: 50px;
 	border-top-left-radius: 8px;
 	border-top-right-radius: 0px;
 	border-bottom-left-radius: 8px;
@@ -57,12 +58,13 @@ button.later {
 }
 div.later_wrap {
 	width: 40px;
-	height: 70px;
+	height: 50px;
 	border-top-right-radius: 8px;
 	border-top-left-radius: 0px;
 	border-bottom-right-radius: 8px;
 	border-bottom-left-radius: 0px;
 	margin-left: 945px;
+	margin-top: 20px;
 	position: fixed;
 	background: rgb(208,208,208); /* Old browsers */
 	background: -moz-linear-gradient(left, rgba(208,208,208,1) 0%, rgba(238,238,238,1) 14%, rgba(246,246,246,1) 20%, rgba(254,254,254,1) 31%, rgba(255,255,255,1) 100%); /* FF3.6+ */
@@ -83,10 +85,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0d0d0', end
 	background: linear-gradient(top, #198cbe 0%, #0872a0 100%);
  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#198cbe', endColorstr='#0872a0', GradientType=0 );
 	border: none;
-	border-radius: 4px;
 	color: #cee8f4;
-	margin: 0px 2px 0px 2px;
-	padding: 4px 0px 0px 5px;
+	margin: 0px;
+	padding: 4px 0px 0px 6px;
 	height: 20px !important;
 }
 #TVGuide .today {
@@ -99,12 +100,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0d0d0', end
 	background: linear-gradient(top, #d1ee7a 0%, #b1dd2c 100%);
  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1ee7a', endColorstr='#b1dd2c', GradientType=0 );
 	border: none;
-	border-radius: 4px;
 	color: #4b6400;
 	text-shadow: #f0f9d3 0 1px 0;
 	font-weight: bold;
-	margin: 0px 2px 0px 2px;
-	padding: 4px 0px 0px 5px;
+	margin: 0px;
+	padding: 4px 0px 0px 6px;
 	height: 20px !important;
 }
 #TVGuide .channelrow {
