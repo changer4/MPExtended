@@ -20,8 +20,12 @@
 @using (Html.BeginForm("TVGuide", "Television", FormMethod.Get))
 {
     @Html.Hidden("group", Model.GroupId)
+	<div class="earlier_wrap">
 	<button name="time" value="@Model.EarlierGuideStart.ToString("s")" class="earlier"></button>
+	</div>
+	<div class="later_wrap">
 	<button name="time" value="@Model.LaterGuideStart.ToString("s")" class="later"></button>
+	</div>
 	<br />
     <div id="TVGuide">
 	  <div class="headerrow">
