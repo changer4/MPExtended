@@ -22,22 +22,40 @@
 
 button.earlier {
 	margin-right: 10px;
-	height: 21px;
-	width: 21px;
 	border: none;
 	background: top left no-repeat url('Images/left.gif');
 	cursor: pointer;
+	position: fixed;
+	width: 30px;
+	height: 75px;
+	background-color: #ffffff; 
+	background-position: 50% 50%; 
+	margin-left: -55px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 0px;
+	box-shadow: 0 1px 20px rgba(0,0,0, .4);
 }
 
 button.later {
 	margin-right: 10px;
-	height: 21px;
-	width: 22px;
 	border: none;
 	background: top left no-repeat url('Images/right.gif');
 	position: absolute;
-	right: 0px;
+	/*right: 0px;*/
 	cursor: pointer;
+	position: fixed;
+	width: 30px;
+	height: 75px; 
+	background-color: #ffffff; 
+	background-position: 50% 50%; 
+	margin-left: 955px;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 0px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 0px;
+	box-shadow: 0 1px 20px rgba(0,0,0, .2);
 }
 #TVGuide .otherday{
 	background: #198cbe;
