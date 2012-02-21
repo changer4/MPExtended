@@ -10,7 +10,7 @@
 	text-align: right;
 }
 #TVGuide .headertime {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	border-left: 1px solid #E8E8E8;
 	padding-left: 6px;
 	font-size: 12px;
@@ -76,35 +76,36 @@ div.later_wrap {
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0d0d0', endColorstr='#ffffff', GradientType=1 ); /* IE6-9 */
 }
 #TVGuide .otherday {
-	background: #198cbe;
-	background: -moz-linear-gradient(top, #198cbe 0%, #0872a0 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #198cbe), color-stop(100%, #0872a0));
-	background: -webkit-linear-gradient(top, #198cbe 0%, #0872a0 100%);
-	background: -o-linear-gradient(top, #198cbe 0%, #0872a0 100%);
-	background: -ms-linear-gradient(top, #198cbe 0%, #0872a0 100%);
-	background: linear-gradient(top, #198cbe 0%, #0872a0 100%);
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#198cbe', endColorstr='#0872a0', GradientType=0 );
-	border: none;
-	color: #cee8f4;
+	background: rgb(232,232,232); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(232,232,232,1) 0%, rgba(231,230,230,1) 5%, rgba(232,232,232,1) 16%, rgba(249,249,249,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(232,232,232,1)), color-stop(5%,rgba(231,230,230,1)), color-stop(16%,rgba(232,232,232,1)), color-stop(100%,rgba(249,249,249,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(232,232,232,1) 0%,rgba(231,230,230,1) 5%,rgba(232,232,232,1) 16%,rgba(249,249,249,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(232,232,232,1) 0%,rgba(231,230,230,1) 5%,rgba(232,232,232,1) 16%,rgba(249,249,249,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(232,232,232,1) 0%,rgba(231,230,230,1) 5%,rgba(232,232,232,1) 16%,rgba(249,249,249,1) 100%); /* IE10+ */
+background: linear-gradient(top,  rgba(232,232,232,1) 0%,rgba(231,230,230,1) 5%,rgba(232,232,232,1) 16%,rgba(249,249,249,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e8', endColorstr='#f9f9f9',GradientType=0 ); /* IE6-9 */
+	border: 1px solid #E8E8E8;
+	color: #686e72;
+	font-weight: bold;
 	margin: 0px;
-	padding: 4px 0px 0px 6px;
+	padding: 4px 0px 0px 5px;
 	height: 20px !important;
 }
 #TVGuide .today {
-	background: #d1ee7a;
-	background: -moz-linear-gradient(top, #d1ee7a 0%, #b1dd2c 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d1ee7a), color-stop(100%, #b1dd2c));
-	background: -webkit-linear-gradient(top, #d1ee7a 0%, #b1dd2c 100%);
-	background: -o-linear-gradient(top, #d1ee7a 0%, #b1dd2c 100%);
-	background: -ms-linear-gradient(top, #d1ee7a 0%, #b1dd2c 100%);
-	background: linear-gradient(top, #d1ee7a 0%, #b1dd2c 100%);
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1ee7a', endColorstr='#b1dd2c', GradientType=0 );
-	border: none;
-	color: #4b6400;
+	background: rgb(249,249,249); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(232,232,232,1) 84%, rgba(231,230,230,1) 95%, rgba(232,232,232,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(249,249,249,1)), color-stop(84%, rgba(232,232,232,1)), color-stop(95%, rgba(231,230,230,1)), color-stop(100%, rgba(232,232,232,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(232,232,232,1) 84%, rgba(231,230,230,1) 95%, rgba(232,232,232,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(232,232,232,1) 84%, rgba(231,230,230,1) 95%, rgba(232,232,232,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(232,232,232,1) 84%, rgba(231,230,230,1) 95%, rgba(232,232,232,1) 100%); /* IE10+ */
+	background: linear-gradient(top, rgba(249,249,249,1) 0%, rgba(232,232,232,1) 84%, rgba(231,230,230,1) 95%, rgba(232,232,232,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#e8e8e8', GradientType=0 ); /* IE6-9 */
+	border: 1px solid #E8E8E8;
+	color: #000000;
 	text-shadow: #f0f9d3 0 1px 0;
 	font-weight: bold;
 	margin: 0px;
-	padding: 4px 0px 0px 6px;
+	padding: 4px 0px 0px 5px;
 	height: 20px !important;
 }
 #TVGuide .channelrow {
@@ -179,5 +180,5 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0d0d0', end
 	margin-right: 10px;
 }
 #TVGuideNavigation input {
-	width: 100px;
+	width: 75px;
 }
