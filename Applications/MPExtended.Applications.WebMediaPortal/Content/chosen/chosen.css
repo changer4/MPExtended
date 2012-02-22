@@ -5,6 +5,7 @@
   display: inline-block;
   zoom: 1;
   *display: inline;
+  margin-right: 10px;
 }
 .chzn-container .chzn-drop {
   background: #fff;

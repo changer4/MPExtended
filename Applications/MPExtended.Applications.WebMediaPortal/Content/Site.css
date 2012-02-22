@@ -358,7 +358,7 @@ div.editor-field
 
 input[type=text], input[type=password]
 {
-	border: 1px solid #8A8575;
+	border: 1px solid #AAA;
 	width: 284px;
 	padding: 3px 8px 3px;
 	margin: 5px 0px;
